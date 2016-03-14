@@ -3,7 +3,7 @@ pollutantmean<-function(directory, pollutant, id=1:332){
     dat <- data.frame()
     for(i in id)
     {
-        filen<-paste("specdata", "/", sprintf("%03s", i), ".csv", sep = "")
+        filen<-paste(directory, "/", sprintf("%03s", i), ".csv", sep = "")
         dat <- rbind(dat, read.csv(filen))
        
     }
@@ -27,7 +27,7 @@ pollutantmeanwithlapply<-function(directory, pollutant, id=1:332){
     dat <- list()
     for(i in id)
     {
-        filen<-paste("specdata", "/", sprintf("%03s", i), ".csv", sep = "")
+        filen<-paste(directory, "/", sprintf("%03s", i), ".csv", sep = "")
         dat<-append(dat, filen)
        
     }
