@@ -23,7 +23,7 @@ best <- function(state, outcome="heart attack") {
     }
     
     ## Return hospital name in that state with lowest 30-day death
-    #vals = NULL
+  
    
     if(outcome == "heart attack")
     {
@@ -101,3 +101,4 @@ best <- function(state, outcome="heart attack") {
     #minval<-min(vals$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack, na.rm=TRUE)
     #lowhosps<-subset(vals$Hospital.Name, vals$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack == minval)
 }
+
